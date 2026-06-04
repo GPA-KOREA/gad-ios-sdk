@@ -1,0 +1,14 @@
+Pretendard Std (https://github.com/orioncactus/pretendard) is licensed under
+the SIL Open Font License, Version 1.1.
+
+Copyright (c) 2021- Kil Hyung-jin
+
+Pretendard files included in this SDK:
+  - pretendard_regular.otf  (Regular, 400)
+  - pretendard_medium.otf   (Medium, 500)
+  - pretendard_semibold.otf (SemiBold, 600)
+  - pretendard_bold.otf     (Bold, 700)
+
+Source: PretendardStd from packages/pretendard-std
+
+Full license text: https://scripts.sil.org/OFL
