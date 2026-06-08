@@ -62,10 +62,20 @@ Gad.showAdList(from: self)
 ### SwiftUI
 
 SDK 화면은 UIKit 기반이라 현재 화면의 `UIViewController` 가 필요합니다.
+버튼에서 `openOfferwall()` 을 호출하세요. (`openOfferwall()` 과 `extension` 은 View `struct` **바깥**, 파일 최상위에 둡니다.)
 
 ```swift
-import GadSDK
+import SwiftUI
 import UIKit
+import GadSDK
+
+struct ContentView: View {
+    var body: some View {
+        Button("오퍼월 열기") {
+            openOfferwall()
+        }
+    }
+}
 
 @MainActor
 func openOfferwall() {
