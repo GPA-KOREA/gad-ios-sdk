@@ -6,7 +6,7 @@ GPA KOREA **GAD 오퍼월** iOS SDK 연동 가이드
 - API 문서는 [GAD API DOCUMENT](https://github.com/GPA-KOREA/gad-sample-android/blob/main/api-doc.md#gad-api-document), [CPA 연동](https://github.com/GPA-KOREA/gad-sample-android/blob/master/guide_cpa.md#gad-cpa-%EC%97%B0%EB%8F%99-%EA%B0%80%EC%9D%B4%EB%93%9C) 페이지를 참고 바랍니다.
 
 - 최소 버전: **iOS 14.5+**
-- 외부 의존성 **0** (UIKit / Foundation / SafariServices / StoreKit)
+- 외부 의존성 **0** — Apple 시스템 프레임워크만 사용 (UIKit / Foundation / SafariServices / StoreKit / PhotosUI / CoreText / Security)
 - 배포 형태: **XCFramework 바이너리** (SPM / CocoaPods)
 
 ---
@@ -25,14 +25,14 @@ https://github.com/GPA-KOREA/gad-ios-sdk
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/GPA-KOREA/gad-ios-sdk", from: "0.1.2")
+    .package(url: "https://github.com/GPA-KOREA/gad-ios-sdk", from: "0.1.3")
 ]
 ```
 
 ### CocoaPods
 
 ```ruby
-pod 'GadSDK', '~> 0.1.2'
+pod 'GadSDK', '~> 0.1.3'
 ```
 
 ```bash

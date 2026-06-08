@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'GadSDK'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'GAD Offerwall iOS SDK'
   s.description      = <<-DESC
     GPA KOREA 의 GAD 오퍼월을 iOS 앱에 통합하기 위한 SDK.
@@ -16,9 +16,9 @@ Pod::Spec.new do |s|
   # GitHub Release 에 업로드된 xcframework zip 을 받아 vendored framework 로 사용.
   # 폰트 / PrivacyInfo 리소스는 xcframework 내부 번들에 포함되어 있음.
   s.source = {
-    :http => 'https://github.com/GPA-KOREA/gad-ios-sdk/releases/download/0.1.2/GadSDK.xcframework.zip'
+    :http => 'https://github.com/GPA-KOREA/gad-ios-sdk/releases/download/0.1.3/GadSDK.xcframework.zip'
   }
   s.vendored_frameworks = 'GadSDK.xcframework'
 
-  s.frameworks = 'UIKit', 'Foundation', 'SafariServices', 'StoreKit'
+  s.frameworks = 'UIKit', 'Foundation', 'SafariServices', 'StoreKit', 'PhotosUI', 'CoreText', 'Security'
 end
