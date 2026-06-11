@@ -19,8 +19,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "GadSDK",
-            url: "https://github.com/GPA-KOREA/gad-ios-sdk/releases/download/0.1.7/GadSDK.xcframework.zip",
-            checksum: "94b75d1087093f0288f3fa3d464a3b8a204e45b7342d4aa2fef7620528ae5109"
+            url: "https://github.com/GPA-KOREA/gad-ios-sdk/releases/download/0.1.8/GadSDK.xcframework.zip",
+            checksum: "3b013c2aa13f56128968b5dbe0ca8eec1af393619df97861cec3d4c8092ffd6a"
         )
     ]
 )
