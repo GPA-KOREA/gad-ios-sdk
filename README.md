@@ -25,14 +25,14 @@ https://github.com/GPA-KOREA/gad-ios-sdk
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/GPA-KOREA/gad-ios-sdk", from: "0.1.10")
+    .package(url: "https://github.com/GPA-KOREA/gad-ios-sdk", from: "0.1.11")
 ]
 ```
 
 ### CocoaPods
 
 ```ruby
-pod 'GadSDK', '~> 0.1.10'
+pod 'GadSDK', '~> 0.1.11'
 ```
 
 ```bash
