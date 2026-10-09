@@ -25,18 +25,20 @@ https://github.com/GPA-KOREA/gad-ios-sdk
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/GPA-KOREA/gad-ios-sdk", from: "0.1.13")
+    .package(url: "https://github.com/GPA-KOREA/gad-ios-sdk", from: "0.9.0")
 ]
 ```
 
 ### CocoaPods
 
+CocoaPods trunk 에는 등록돼 있지 않습니다. `Podfile` 에 podspec 주소를 직접 지정하세요.
+
 ```ruby
-pod 'GadSDK', '~> 0.1.13'
+pod 'GadSDK', :podspec => 'https://raw.githubusercontent.com/GPA-KOREA/gad-ios-sdk/0.9.0/GadSDK.podspec'
 ```
 
 ```bash
-pod install --repo-update
+pod install
 ```
 
 ---
@@ -97,6 +99,20 @@ private extension UIViewController {
     }
 }
 ```
+
+---
+
+## 환경 지정 (0.9.0+)
+
+연동 테스트는 스테이징 서버로 할 수 있습니다. 초기화에 환경을 넘깁니다.
+
+```swift
+Gad.initialize(mediaKey: "YOUR_MEDIA_KEY", userId: "USER_ID", environment: .staging)
+```
+
+- `environment` 를 주지 않으면 운영(`.production`)입니다.
+- 스테이징이면 초기화 때 콘솔에 경고 로그가 남고 SDK 가 띄우는 광고 목록·상세·웹 오퍼월 화면에 `STAGING` 표식이 보입니다. 출시 빌드에는 스테이징 지정을 남기지 마세요.
+- 스테이징 서버는 예고 없이 중단될 수 있습니다.
 
 ---
 
