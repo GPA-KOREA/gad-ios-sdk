@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "gad-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GPA-KOREA/gad-ios-sdk",
+      "state" : {
+        "revision" : "ffd33a8ce76dc2290e89350b6f79f0fd8684b594",
+        "version" : "0.9.0"
+      }
+    }
+  ],
+  "version" : 2
+}
