@@ -1,3 +1,6 @@
 .DS_Store
 *.xcframework
 *.xcframework.zip
+DerivedData/
+xcuserdata/
+*.xcuserstate
